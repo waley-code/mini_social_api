@@ -1,0 +1,22 @@
+{
+  "name": "basic_social_app",
+  "version": "1.0.0",
+  "description": "basic social media app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "api"
+  ],
+  "author": "Adeosun Oyewale",
+  "license": "ISC",
+  "dependencies": {
+    "date-format": "^4.0.14",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
