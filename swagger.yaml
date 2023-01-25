@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: Social App
+  description: Our first Social App -Wale
+  version: 1.0.1
+
+servers:
+  - url: http://localhost:4000/api/vi
+    description: LocalHost version of my app
+  - url: http://localhost:4000/api/vi
+    description: Demo url does not work
+
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+    BearerAuth:
+      type: http
+      scheme: bearer
+      
+paths:
+  /instagram:
+    get:
+      summary: returns username, followers and follows
+      responses: 
+        '200': #status code
+          description: returns an object
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  username:
+                    type: string
+                  follower:
+                    type: string
+                  follows:
+                    type: string
+    
+    post:
+      summary: returns username, followers and follows
+      responses: 
+        '200': #status code
+          description: returns an object
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  username:
+                    type: string
+                  follower:
+                    type: string
+                  follows:
+                    type: string
+  /{token}:
+    get:
+      summary: returns all parameters inputed
+      parameters:
+      - name: token
+        default: 5
+        in: path
+        schema:
+          type: string
+      responses: 
+        '200': #status code
+          description: returns an object
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  params:
+                    type: string
