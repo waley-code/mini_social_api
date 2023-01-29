@@ -11,7 +11,7 @@
     1. JavaScript (Scripting language)
     2. Nodejs (JavaScript runtime)
     3. Express.js (Server framework)
-    4. Swagger-UI (for documentation).
+    4. Swagger-UI (for documentation)
 
 #### Mind Map (Design)
 
